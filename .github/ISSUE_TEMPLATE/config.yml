@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/mojrs10/DeepMox-Support/blob/main/SECURITY.md
+    about: Do not disclose vulnerabilities in public Issues. Follow SECURITY.md.
+  - name: Browse existing reports
+    url: https://github.com/mojrs10/DeepMox-Support/issues
+    about: Search open and closed Issues before creating a new report.
+  - name: Documentation and troubleshooting
+    url: https://github.com/mojrs10/DeepMox-Support/tree/main/docs
+    about: Check the FAQ and troubleshooting guide.
