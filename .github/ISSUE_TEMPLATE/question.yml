@@ -1,0 +1,36 @@
+name: Question
+description: Ask a question about using DeepMox.
+title: "[Question]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the FAQ and existing Issues first. Do not include credentials or private Proxmox configuration.
+  - type: input
+    id: app_version
+    attributes:
+      label: DeepMox version (optional)
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What have you tried? (optional)
+      description: Include relevant steps and non-sensitive error messages.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Confirmation
+      options:
+        - label: I understand this question and its comments are public.
+          required: true
+        - label: I have not included passwords, tokens, cookies, or private keys.
+          required: true
