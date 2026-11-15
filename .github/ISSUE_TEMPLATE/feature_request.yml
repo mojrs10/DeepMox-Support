@@ -1,0 +1,62 @@
+name: Feature request
+description: Suggest a new DeepMox capability or workflow.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the user problem and desired outcome. A suggestion is not a commitment to implement it.
+        This request is public. Do not include credentials or private infrastructure details.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or limitation
+      description: What is difficult or impossible with the current app?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe what you would like DeepMox to do.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Feature area
+      options:
+        - Nodes / cluster
+        - Virtual machines (VM)
+        - Containers (LXC)
+        - Terminal / console
+        - Storage
+        - Backup / restore
+        - Monitoring / performance
+        - Connection / authentication
+        - User interface
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds (optional)
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context or mockup link (optional)
+      description: Ensure attachments and links do not expose sensitive information.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing Issues and understand this suggestion may not be implemented.
+          required: true
+        - label: I understand this request and its attachments are public.
+          required: true
